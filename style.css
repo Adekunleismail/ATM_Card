@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.logo img {
+    width: 45px;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    background-image: url("icon/bg.jpg");
+    position: relative;
+    padding: 30px;
+    border-radius: 30px;
+    max-width: 350px;
+    width: 100%;
+
+}
+h4 {
+    color: #ffffff;
+    margin-left: 8px;
+}
+header, .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+img {
+    width: 50px;
+}
+h5 {
+    font-size: 15px;
+    color: #ffffff;
+}
+h5.number {
+    margin-top: 10px;
+}
+h5.name {
+    margin-top: 10px;
+}
+.valid {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.stripe {
+    content: "";
+    background-color: black;
+    max-width: 100%;
+    height: 30px;
+    width: 300px;
+    margin: 0;
+}
+.sign {
+    margin-top: 5px;
+    width: 250px;
+    height: 30px;
+}
+.contact {
+    margin-top: 25px;
+}
+h3 {
+    font-size: 10px;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.container:nth-child(1) {
+    top: 0;
+    left: 0;
+    z-index: 2; /* Display the first container on top */
+}
+.container:nth-child(2) {
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    z-index: 1; /* Display the second container behind the first */
+}
